@@ -19,8 +19,9 @@
             <RowDefinition Height="20px"/>
         </Grid.RowDefinitions>
         <ProgressBar x:Name="Seeker" Minimum="0" Maximum="1" Orientation="Vertical" Grid.RowSpan="2" MouseLeftButtonDown="Seeker_MouseLeftButtonDown"/>
-        <TextBox x:Name="Command" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" KeyDown="Command_KeyDown"/>
+        <TextBox x:Name="Command" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" PreviewKeyDown="Command_KeyDown"/>
         <wpf:VlcControl x:Name="Vlc" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <ListView x:Name="PlaylistView" Grid.Column="2" Visibility="Hidden"/>
+        <ListView x:Name="PlaylistView" Grid.Column="2" />
+
     </Grid>
 </Controls:MetroWindow>
